@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#050505"
+    android:orientation="vertical"
+    android:padding="22dp"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AVANG VPN"
+        android:textColor="#FFFFFF"
+        android:textSize="28sp"
+        android:letterSpacing="0.12"
+        android:textStyle="bold"
+        android:layout_marginTop="18dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FAST • MINIMAL • SECURE"
+        android:textColor="#C77DFF"
+        android:textSize="11sp"
+        android:letterSpacing="0.15"
+        android:layout_marginBottom="22dp"/>
+
+    <!-- کارت وضعیت و سرور فعال -->
+    <LinearLayout
+        android:id="@+id/statusBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_card"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DISCONNECTED"
+            android:textColor="#FF5252"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvServerInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="سروری انتخاب نشده است"
+            android:textColor="#E0AAFF"
+            android:textSize="13sp"
+            android:layout_marginTop="6dp"/>
+    </LinearLayout>
+
+    <!-- دکمه جادویی: آپدیت + پینگ موازی + انتخاب سریع‌ترین -->
+    <Button
+        android:id="@+id/btnMagic"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:text="⚡ آپدیت، پینگ و انتخاب بهترین سرور"
+        android:backgroundTint="#7B2CBF"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="12dp"/>
+
+    <!-- ردیف ورود از کلیپ‌بورد و اسکن QR -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginBottom="10dp">
+
+        <Button
+            android:id="@+id/btnClipboard"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="6dp"
+            android:text="📋 کلیپ‌بورد"
+            android:backgroundTint="#1E1E1E"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp"/>
+
+        <Button
+            android:id="@+id/btnQrScan"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:layout_marginStart="6dp"
+            android:text="📷 اسکن QR"
+            android:backgroundTint="#1E1E1E"
+            android:textColor="#C77DFF"
+            android:textSize="13sp"/>
+    </LinearLayout>
+
+    <!-- مدیریت و حذف ساب‌لینک‌ها -->
+    <Button
+        android:id="@+id/btnSubManager"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:text="🗑 مدیریت و حذف ساب‌لینک‌ها (0)"
+        android:backgroundTint="#161616"
+        android:textColor="#E0AAFF"
+        android:textSize="13sp"
+        android:layout_marginBottom="28dp"/>
+
+    <!-- دکمه دایره‌ای اصلی پاور با انیمیشن -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/btnPower"
+            android:layout_width="155dp"
+            android:layout_height="155dp"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_power_off"
+            android:text="CONNECT"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+    </FrameLayout>
+
+</LinearLayout>
